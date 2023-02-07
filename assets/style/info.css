@@ -1,0 +1,116 @@
+
+main{
+    position: relative;
+    top: 15vh;
+}
+
+.main--box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    gap: 1rem;
+    border-bottom:  #FF8933 5px solid;
+}
+
+.title{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box{
+    width: 98%;
+    margin: 0.5rem auto;
+    border: black 1px solid;
+}
+
+.box--header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.box--content{
+    padding: 10px;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem auto;
+    font-size: 12px;
+}
+
+.cat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+    color: black;
+}
+
+.list .icon{
+    margin-left: 2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.list{
+    padding: 10px;
+}
+
+.list ul{
+    margin-left: 3rem;
+}
+
+.list p{
+    margin-left: 2rem;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.links a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    gap: 10px;
+}
+
+
+@media (max-width: 800px) {
+    *{
+        font-size: 13px;
+    }
+
+
+    .main--box{
+        width: 90%;
+    }
+}

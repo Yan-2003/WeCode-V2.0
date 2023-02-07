@@ -1,0 +1,123 @@
+
+.leaderboard{
+    margin-bottom: 10rem;
+}
+
+.leaderboard--content{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.user--content{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    border-bottom: #FF8933 5px solid;
+}
+
+.user--main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.leaderboard--prof--pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.user--box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header--box{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--box.top{
+    background-color: white;
+    animation-name: flow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 280ms;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+
+@keyframes flow {
+    0%{
+      
+    }
+    100%{
+    }
+}
+
+
+
+
+.user--box2{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .leaderboard--content{
+        top: 10vh;
+        width: 80%;
+        gap: 1rem;
+    }
+    .user--box1 p{
+        font-size: 15px;
+    }
+    .user--box2{
+        width: 20%;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .leaderboard--content{
+        top: 15vh;
+        width: 99%;
+        gap: 0.2rem;
+    }
+    .header--box{
+        padding: 10px;
+    }
+    .leaderboard--prof--pic{
+        width: 20px;
+        height: 20px;
+    }
+    .user--box1 p{
+        font-size: 12px;
+    }
+    .user--box2{
+        width: 30%;
+        font-size: 12px;
+    }
+    
+}

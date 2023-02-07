@@ -1,0 +1,113 @@
+.edit--main{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile--pic img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.edit--lower{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem 0;
+}
+
+.input--style1{
+    border: none;
+    outline: none;
+    background: none;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.edit--buttons{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    gap: 1rem;
+}
+
+.button--style{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 20px;
+    background-color: #FF8933;
+    color: white;
+    transition: 280ms ease-in-out;
+    margin: 2rem 0;
+}
+
+.button--style:hover{
+    transition: 280ms ease-in-out;
+    background-color: #bd6424;
+}
+
+
+.file--main{
+    position: relative;
+    margin: 2rem 0;
+    background: url('/assets/img/icon/camera.png');
+    filter: invert(1);
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file--main input{
+    cursor: pointer;
+    opacity: 0;
+    width: 64px;
+    height: 64px;
+}
+
+@media (max-width:900px) {
+    .profile--pic img{
+        width: 200px;
+        height: 200px;
+    }
+    .file--main{
+        width: 32px;
+        height: 32px;
+    }
+    .edit--lower{
+        width: 50%;
+    }
+    .edit--buttons{
+        width: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    .profile--pic img{
+        width: 150px;
+        height: 150px;
+    }
+    .file--main{
+        width: 32px;
+        height: 32px;
+    }
+    .edit--lower{
+        width: 80%;
+    }
+    .edit--buttons{
+        width: 80%;
+    }
+}

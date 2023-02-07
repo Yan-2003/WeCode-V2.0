@@ -1,0 +1,150 @@
+.dice--container{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.people--container{
+    position: relative;
+    top: 15vh;
+}
+
+.people--main--content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post--container{
+    position: relative;
+    top: 15vh;
+    margin-bottom: 10rem;
+}
+.input--style{
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 20px 30px;
+}
+
+.button--style{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 20px;
+    background-color: #FF8933;
+    color: white;
+    transition: 280ms ease-in-out;
+}
+
+.button--style:hover{
+    transition: 280ms ease-in-out;
+    background-color: #bd6424;
+}
+
+.post--main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.post--form--content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.announcement--form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.send--post{
+    display: flex;
+    flex-direction: row;
+}
+
+.category--icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.click{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    padding: 1px;
+    opacity: 0;
+}
+.click:checked{
+    opacity: 0.2;
+}
+.dice--form{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dice--btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dice--btn button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.back{
+    text-decoration: none;
+    background: #FF8933;
+    padding: 10px;
+    color: white;
+}
+
+.back:hover{
+    transition: 280ms;
+    background: #bd6424;
+}
+.people--box{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.people--lower form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.people--lower form button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

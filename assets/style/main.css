@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    z-index: 0;
+}
+
+:root{
+    --bg--color:  rgba(8,14,38,1);
+    --bg--header: #0B0B0B;
+}
+
+
+
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: var(--bg--color);
+    background: -webkit-linear-gradient(-60deg, #4e4e4e 1%, var(--bg--color) 60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main--powered{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.header--box{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+.header--main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header--container{
+    width: 100%;
+    background-color: var(--bg--header);
+    box-shadow: rgba(0, 0, 0, 0.663) 1px 1px 5px;
+    margin: 0 auto;
+}
+
+.header--content{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+.header--logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.nav--contents{
+    width: 40%;
+    margin: 1rem auto;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.663) 1px 1px 5px;
+}
+
+.nav--btn.active{
+    border-bottom: #FF8933 1px solid;
+}
+
+.nav--btn{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.landing--page--content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('/assets/img/picture/multi.png');
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position-y: 90%;
+}
+
+.landing--content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.main--logo{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+}
+
+.landing--content p{
+    font-size: 20px;
+    line-height: 2rem;
+    width: 50%;
+}
+
+.signin--btn{
+    width: 60px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    background-color: #FF8933;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: 280ms ease-in-out;
+}
+.signin--btn:hover{
+    transition: 280ms ease-in-out;
+    background-color: #bd6424;
+}
+
+.notfound{
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+
+
+@media (max-width:400px) {
+
+    .nav--contents{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .main--powered{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 8px;
+    }
+    .nav--contents{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 2rem;
+    }
+    .nav--btn{
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        padding: 2px;
+    }
+
+    .main--logo{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .landing--content p{
+        font-size: 12px;
+        line-height: 1rem;
+        width: 60%;
+    }
+    .landing--page--content{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url('/assets/img/picture/multi.png');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: 100%;
+        background-position-y: 60%;
+    }
+    .signin--btn{
+        font-size: 10px;
+        width: 50px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #FF8933;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        transition: 280ms ease-in-out;
+    }
+    
+    
+}
