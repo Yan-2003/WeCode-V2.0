@@ -2,10 +2,10 @@
  
 
 class db{
-    private $servername = "localhost:3306";
-    private $username = "root";
-    private $password = "Jul-092003";
-    private $databasename = "wecode";
+    private $servername = "***";
+    private $username = "***";
+    private $password = "****";
+    private $databasename = "****";
     public $conn;
     public $test;
 
